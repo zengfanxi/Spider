@@ -50,7 +50,7 @@ headers = {
 
 # 循环开始
 
-for i in tqdm(range(396,409)):
+for i in tqdm(range(1,400)):
     url_ = url + str(i)
 #     r = requests.get(url_, headers= headers)
 #     info = r.json()
@@ -130,7 +130,7 @@ for i in tqdm(range(396,409)):
                       memo4,location]
             data_2.append(data_1)
     else:
-        print('爬虫在第%d次请求中被阻断!' %(i))
+        print('第%d次请求中被阻断!' %(i))
         break
 
 # 将爬取的数据整理到df
